@@ -3,7 +3,7 @@
 <head>
     <?php include "../include/meta.php" ?>
     <title>
-        Change Password | Dashboard
+        Change Password
     </title>
     <?php include "../include/css.php" ?>
 </head>

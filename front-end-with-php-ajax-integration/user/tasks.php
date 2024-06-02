@@ -3,7 +3,7 @@
 <head>
     <?php include "../include/meta.php" ?>
     <title>
-        Task | Dashboard
+        Tasks
     </title>
     <?php include "../include/css.php" ?>
 </head>
@@ -77,93 +77,94 @@
     </div>
 
     <!--Add Modal-->
-    <div class="modal fade" id="addTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="addTaskForm">
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="name">Task Name</label>
-                            <input type="text" class="form-control" placeholder="Task Name" name="task_name" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">User Responsible</label>
-                            <input type="text" class="form-control" placeholder="User Responsible"
-                                   name="user_responsible" id="user_responsible">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">Due Date</label>
-                            <input type="date" class="form-control" placeholder="Due Date"
-                                   name="due_date" id="dueDate">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">status</label>
-                            <select class="form-control" name="status">
-                                <option value="1">Complete</option>
-                                <option value="0">Incomplete</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close_1">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                    </div>
-                </form>
+<div class="modal fade" id="addTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            <form id="addTaskForm">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name">Task Name</label>
+                        <input type="text" class="form-control" placeholder="Task Name" name="task_name" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name">User Responsible</label>
+                        <input type="text" class="form-control" placeholder="User Responsible"
+                               name="user_responsible" id="user_responsible">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name">Due Date</label>
+                        <input type="date" class="form-control" placeholder="Due Date"
+                               name="due_date" id="dueDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="name">Status</label>
+                        <select class="form-control" name="status">
+                            <option value="1">Complete</option>
+                            <option value="0">Incomplete</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close_1">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
-    <!--Edit Modal-->
-    <div class="modal fade" id="editTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form id="updateTaskForm">
-                    <div class="modal-body">
-                        <div class="mb-3">
-                            <label for="name">Task Name</label>
-                            <input type="text" class="form-control" placeholder="Task Name" name="task_name"
-                                   id="edit_name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">User Responsible</label>
-                            <input type="text" class="form-control" placeholder="User Responsible"
-                                   name="user_responsible" id="edit_user_responsible">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">Due Date</label>
-                            <input type="date" class="form-control" placeholder="Due Date"
-                                   name="due_date" id="edit_dueDate">
-                        </div>
-                        <div class="mb-3">
-                            <label for="name">status</label>
-                            <select class="form-control" name="status" id="edit_status">
-                                <option value="1">Complete</option>
-                                <option value="0">Incomplete</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close_2">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                    </div>
-                </form>
+<!--Edit Modal-->
+<div class="modal fade" id="editTask" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Edit Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
+            <form id="updateTaskForm">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="edit_name">Task Name</label>
+                        <input type="text" class="form-control" placeholder="Task Name" name="task_name"
+                               id="edit_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit_user_responsible">User Responsible</label>
+                        <input type="text" class="form-control" placeholder="User Responsible"
+                               name="user_responsible" id="edit_user_responsible">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit_dueDate">Due Date</label>
+                        <input type="date" class="form-control" placeholder="Due Date"
+                               name="due_date" id="edit_dueDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit_status">Status</label>
+                        <select class="form-control" name="status" id="edit_status">
+                            <option value="1">Complete</option>
+                            <option value="0">Incomplete</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="close_2">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
+
 
 </main>
 <?php include "../include/js.php" ?>

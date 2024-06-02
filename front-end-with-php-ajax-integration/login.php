@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <title>
-        Soft UI Dashboard by Creative Tim
+        Login
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -29,8 +29,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 text-center mx-auto">
-                    <h1 class="text-white mb-2 mt-5">Welcome Back!</h1>
-                    <p class="text-lead text-white">Login Your Account.</p>
+                    <h1 class="text-white mb-2 mt-5">WorkFlow Wise</h1>
+                    <p class="text-lead text-white">Stay Organized, Stay Productive !</p>
                 </div>
             </div>
         </div>

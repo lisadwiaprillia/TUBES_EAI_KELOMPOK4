@@ -3,7 +3,7 @@
 <head>
     <?php include "../include/meta.php" ?>
     <title>
-        Dashboard
+        Profile
     </title>
     <?php include "../include/css.php" ?>
 </head>
@@ -141,7 +141,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Profile Headline</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -171,7 +171,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Detail Profile</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -184,7 +184,7 @@
                             </div>
                             <div class="mb-3">
                                 <label for="name">Enter Description</label>
-                                <textarea name="description" id="infoDescription" class="form-control" placeholder="Description"  cols="30" rows="10"></textarea>
+                                <textarea name="description" id="infoDescription" class="form-control" placeholder="Description"  cols="30" rows="3"></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="name">Enter Mobile</label>

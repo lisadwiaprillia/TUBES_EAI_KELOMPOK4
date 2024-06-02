@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>
-        Logout | Dashboard
+        Logout
     </title>
 </head>
 <body class="g-sidenav-show  bg-gray-100">
